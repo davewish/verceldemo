@@ -6,7 +6,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: check out
       - uses: actions/checkout@v2
+      - name: vercel action 
       - uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
