@@ -18,8 +18,8 @@ jobs:
           node-version: '14'
       - name: Build
         run: |
-          yarn install --frozen-lockfile
-          npm run bundle
+          yarn install 
+          npm run Build
       - name: Run Tests Locally
         run: npm run test
       - name: Deploy to Staging
