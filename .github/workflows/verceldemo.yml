@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: |
           yarn install 
-          npm run Build
+          npm run build
       - name: Run Tests Locally
         run: npm run test
       - name: Deploy to Staging
